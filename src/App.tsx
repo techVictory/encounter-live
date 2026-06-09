@@ -14,9 +14,29 @@ function EncounterLive() {
       <section className="streamSection">
         <h1>Encounter Live</h1>
 
-        <div className="placeholder">
-          RESI livestream will be available here.
-        </div>
+        <div
+  style={{
+    position: "relative",
+    overflow: "hidden",
+    paddingTop: "56.25%",
+    borderRadius: "16px",
+  }}
+>
+  <iframe
+    title="Encounter Live Stream"
+    src="https://control.resi.io/webplayer/video.html?id=a9ec4572-3a6d-47d2-8bb9-bff2dfb3ce52"
+    allow="autoplay; fullscreen"
+    allowFullScreen
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      border: "none",
+    }}
+  />
+</div>
       </section>
     </main>
   );
